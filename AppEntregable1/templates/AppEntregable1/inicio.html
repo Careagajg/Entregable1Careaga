@@ -1,0 +1,39 @@
+{% extends "AppEntregable1/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+   
+    <h3>Buscar cliente</h3>
+    <br>
+    <h3>Ingrese el apellido:</h3>
+
+    <form action="/AppEntregable1/buscar" method="GET">
+
+        <input type="text" apellido="apellido" id="apellido">
+
+        <input type="submit" value="Buscar">
+
+    </form>
+
+    
+
+    {% if clientes %}
+
+    <p>Estamos buscando el: {{apellido}}</p>
+
+    <ul>
+	{% for clientes in clientes %}
+		<li> {{clientes.nombre}} </li>
+		<li> {{clientes.apellido}} </li>
+        
+	{% endfor %}
+
+    </ul>
+   
+    {% endif %}
+
+{% endblock %}

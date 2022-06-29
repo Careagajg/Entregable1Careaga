@@ -1,0 +1,31 @@
+{% extends "AppEntregable1/padre.html" %}
+
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h2>VENTAS</h2>
+    <br>
+    
+
+    <h3>Ingresa el mes y las ventas totales:</h3>
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    {% if miFormulario.errors %}
+
+    <p style="color: rgb(30, 255, 0);"> Están mal los datos, revisar</p>
+
+    {% endif %}
+    <form action="" method="POST">{% csrf_token %}
+
+        <!-- Acá está la magia de Django-->
+        
+        <table>
+            {{ miFormulario.as_table }}
+        </table>
+
+        <input type="submit", value="Guardar">
+
+    </form>
+
+{% endblock %}
