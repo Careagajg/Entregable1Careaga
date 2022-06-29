@@ -1,7 +1,6 @@
 #Entregable1Careaga.
 
-Primer entrega del Proyecto Final 
-Este proyecto es para la cursada de Python, en concepto de la primer entrega del proyecto final. 
+Primer entrega del Proyecto Final. Este proyecto es para la cursada de Python, en concepto de la primer entrega del proyecto final. 
 En primera instancia nuestra app está destinada a la administración de comercios pequeños, como base para un sistema de gestión integral adaptado a cada comercio. 
 En esta etapa cuenta con tres módulos básicos:
 - Clientes: Permite cargar datos personales del cliente como la orde de compra mediante un formulario.
